@@ -2,11 +2,7 @@
 FROM nginx:alpine
 
 # Copy the website files to the container
-COPY myapp /usr/share/nginx/html
-COPY myapp/css /usr/share/nginx/html/css
-COPY myapp/fonts /usr/share/nginx/html/fonts
-COPY myapp/images /usr/share/nginx/html/images
-COPY myapp/js /usr/share/nginx/html/js
+COPY portainer-dockerfile-example /usr/share/nginx/html
 
 # Expose port 80 for web traffic
 EXPOSE 80
